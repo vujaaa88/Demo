@@ -22,7 +22,6 @@ import org.xml.sax.SAXException;
 
 import service.ManipulateXML;
 
-
 /**
  * Servlet implementation class WebServlet
  */
