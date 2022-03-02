@@ -1,5 +1,5 @@
 entity\User.class
+service\XMLService.class
 web\WebServlet.class
 entity\Country.class
-service\ManipulateXML.class
 entity\Continent.class

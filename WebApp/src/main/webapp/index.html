@@ -1,15 +1,63 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-</head>
-
-<body>
-<form action=welcome method="get">  
-<input type="submit" value="Run Application">  
-</form>  
-<table class="test"></table>
-<script src="js/script.js"></script>
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Web application</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   </head>
+   <body>
+      <div class="container">
+         <form class="reg" action="/WebApp/add" method="post">
+            <h2>Register</h2>
+            <label for="firstName">
+            <b>First Name</b>
+            </label>
+            <input type="text" placeholder="First Name" id="firstName" name="firstName" required/>
+            <label for="lastName">
+            <b>Last Name</b>
+            </label>
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName" required/>
+            <label for="address">
+            <b>Address</b>
+            </label>
+            <input type="text" placeholder="Address" id="address" name="address" required/>
+            <label for="city">
+            <b>City</b>
+            </label>
+            <input type="text" placeholder="City" id="city" name="city" required/>
+            <label for="country">
+            <b>Country</b>
+            </label>
+            <select name="country">
+               <option>United States</option>
+               <option>Canada</option>
+               <option>United Kingdom</option>
+               <option>France</option>
+               <option>Germany</option>
+               <option>China</option>
+               <option>Japan</option>
+            </select>
+            <label for="email">
+            <b>Email</b>
+            </label>
+            <input type="email" placeholder="Email" id="email" name="email" required/>
+            <label for="password">
+            <b>Password</b>
+            </label>
+            <input type="password" placeholder="Password" id="password" name="password" required/>
+            <button type="submit" class="btn-reg">Register</button>
+         </form>
+         </hr>
+         <div class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <h3 class="msg"></h3>
+            </div>
+         </div>
+         </hr>
+         <h2 class="list">List of registered users</h2>
+         <table class="table"></table>
+      </div>
+      <script src="js/script.js"></script>
+   </body>
 </html>
